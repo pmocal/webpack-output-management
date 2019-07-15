@@ -2,10 +2,10 @@
   "name": "webpack2",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "url-loader": "^2.0.1"
+    "url-loader": "^2.0.1",
+    "express": "latest"
   }
 }
