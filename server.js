@@ -1,4 +1,6 @@
 var express = require('express');
+const path = require('path');
+const port = process.env.PORT || 8080;
 var app = express();
 
 // the __dirname is the current directory from where the script is running
@@ -9,6 +11,4 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-app.listen((process.env.PORT || 8080), function () {
-  console.log('webpack output management app listening on port!');
-});
+app.listen(port);
